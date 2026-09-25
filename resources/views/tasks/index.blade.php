@@ -20,7 +20,7 @@
         }
 
         .navbar {
-            background: #2563eb;
+            background: #2d3952;
             color: white;
             padding: 20px 8%;
             display: flex;
@@ -51,7 +51,7 @@
         }
 
         .add-btn {
-            background: #2563eb;
+            background: #14ac0f;
             color: white;
             padding: 12px 20px;
             text-decoration: none;
@@ -189,8 +189,8 @@
         <div class="top-section">
             <h2>My Tasks</h2>
 
-            <a href="{{ route('tasks.create') }}" class="add-btn">
-                + Add Task
+            <a href="/tasks/create" class="add-btn">
+                 + Add Task
             </a>
         </div>
 
@@ -260,21 +260,21 @@
                                 <div class="actions">
 
                                     <a
-                                        href="{{ route('tasks.show', $task) }}"
+                                        href="/tasks/{{ $task->id }}"
                                         class="btn view-btn"
-                                    >
+                                    >   
                                         View
                                     </a>
 
                                     <a
-                                        href="{{ route('tasks.edit', $task) }}"
+                                        href="/tasks/{{ $task->id }}/edit"
                                         class="btn edit-btn"
                                     >
                                         Edit
                                     </a>
 
                                     <form
-                                        action="{{ route('tasks.destroy', $task) }}"
+                                        action="/tasks/{{ $task->id }}"
                                         method="POST"
                                         onsubmit="return confirm('Are you sure you want to delete this task?');"
                                     >
@@ -315,8 +315,8 @@
 
                 <br>
 
-                <a href="{{ route('tasks.create') }}" class="add-btn">
-                    Add Your First Task
+               <a href="/tasks/create" class="add-btn">
+                     Add Your First Task
                 </a>
 
             </div>
