@@ -12,3 +12,12 @@
 - Edit Task
 - Delete Task
 - Update Status
+
+## Additional Features
+
+- Task due dates
+- Task descriptions
+- Pending and Completed status
+- Delete confirmation
+- Responsive design
+- Success messages after task actions
