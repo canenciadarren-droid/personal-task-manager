@@ -25,7 +25,7 @@
         ========================= */
 
         .navbar {
-            background: #1e293b;
+            background: #122d56;
             color: white;
             padding: 18px 7%;
             display: flex;

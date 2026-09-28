@@ -20,7 +20,7 @@
         }
 
         .navbar {
-            background: #2563eb;
+            background: #122d56;
             color: white;
             padding: 20px 8%;
         }
